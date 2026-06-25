@@ -26,7 +26,7 @@ const getWeatherData = (zip) => {
 
             CITY_NAME.textContent = local_weather_data.name;
             let weather_in_celsius = Math.round(
-                local_weather_data.main.temp -273
+                local_weather_data.main.temp - 32 * (5 / 9)
             );
             CITY_TEMP.textContent = weather_in_celsius + " °C";
         });
