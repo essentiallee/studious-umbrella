@@ -1,7 +1,8 @@
 console.log("Hello World!");
 
-let btn = document.querySelector(".search-button");
 let input = document.querySelector(".zipcode");
+let btn = document.querySelector(".search-button");
+
 
 function getWeatherData(zip) {
     let API_KEY = config.WEATHER_API_KEY;
